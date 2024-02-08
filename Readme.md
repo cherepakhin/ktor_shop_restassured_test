@@ -37,7 +37,7 @@ $ echo $SHOP_KOTLIN_IP
 ktor_shop_restassured_test$ ./gradlew test
 ````
 
-Отчет о тестирован сформирована в формате Allure Report. Просмотр результатов: 
+Отчет о результатах тестирования сформирован в формате Allure Report. Просмотр результатов: 
 
 ````shell
 ktor_shop_restassured_test$ allure serve build/allure-results/
