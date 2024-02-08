@@ -39,3 +39,4 @@ out/
 ### Allure rports ###
 
 allure-results/
+.allure/
