@@ -41,7 +41,6 @@ dependencies {
 	implementation("com.typesafe:config:1.4.2")
 
 	implementation("org.assertj:assertj-core:3.23.1")
-
 }
 
 val allureConfig = allure {

@@ -7,8 +7,10 @@ import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
+
 @DisplayName("Test Route Message")
 class RestEchoMessageTest {
+
     @Test
     @DisplayName("GET Request /message is status=200")
     fun getMessageStatusOk() {
@@ -28,4 +30,15 @@ class RestEchoMessageTest {
         val responseBody = response.asString()
         Assertions.assertEquals(MESSAGE, responseBody)
     }
+
+//    @BeforeSuite
+//    fun setAllureEnvironment(): Unit {
+//        allureEnvironmentWriter(ImmutableMap.of("CPU", "Intel Core i3"))
+//        allureEnvironmentWriter(
+//            ImmutableMap.builder<String, String>()
+//                .put("CPU", "Intel Core i3")
+//                .put("URL", "http://v.perm.ru")
+//                .build()
+//        )
+//    }
 }
