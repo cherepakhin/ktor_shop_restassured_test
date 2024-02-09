@@ -27,17 +27,18 @@ class CreaterEnvironment {
         println("Memory free: ${Runtime.getRuntime().freeMemory()}")
         println("MaxMemory: ${Runtime.getRuntime().maxMemory()}")
         println("AvailableProcessors: ${Runtime.getRuntime().availableProcessors()}")
-        val cpu=File("/proc/cpuinfo").readLines()
+        val cpu = File("/proc/cpuinfo").readLines()
         println("-------------CPU--------------")
-        for(i in cpu) {
+        for (i in cpu) {
             println(i)
         }
 //      model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
-        val mem=File("/proc/meminfo").readLines()
+        val mem = File("/proc/meminfo").readLines()
         println("--------------MEM-------------")
-        for(i in mem) {
+        for (i in mem) {
             println(i)
         }
+
 //      --------------MEM-------------
 //      MemTotal:       16293328 kB
 //      MemFree:          392036 kB
