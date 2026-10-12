@@ -1,5 +1,4 @@
-package ru.perm.v.shop_resttemplate_test
-
+package ru.perm.v.ktor_shop_restassured
 
 import io.restassured.RestAssured
 import org.apache.http.HttpStatus

@@ -1,10 +1,11 @@
-package ru.perm.v.shop_resttemplate_test
+package ru.perm.v.ktor_shop_restassured
 
 import org.junit.jupiter.api.Test
 import java.io.File
 import java.lang.String.format
 import java.nio.file.Files
 import java.nio.file.Path
+import java.nio.file.StandardCopyOption
 
 
 class CreaterEnvironment {
@@ -13,7 +14,7 @@ class CreaterEnvironment {
         //TODO: change to real resources (cpu, ram, host, ip, version project, group, artifact)
         val envSrc = Path.of("src/test/resources/environment.properties")
         val envTarget = Path.of("build/allure-results/environment.properties")
-        Files.copy(envSrc, envTarget)
+        Files.copy(envSrc, envTarget, StandardCopyOption.REPLACE_EXISTING)
     }
 
     @Test
@@ -22,7 +23,7 @@ class CreaterEnvironment {
         props.keys.stream().forEach { p -> println(format("%s:\t%s", p.toString(), props.getProperty(p.toString()))) }
         println("------------------------------")
 //        println(System.getenv().keys)
-        val total = Runtime.getRuntime().totalMemory()
+//        val total = Runtime.getRuntime().totalMemory()
         println("Memory total: ${Runtime.getRuntime().totalMemory()}")
         println("Memory free: ${Runtime.getRuntime().freeMemory()}")
         println("MaxMemory: ${Runtime.getRuntime().maxMemory()}")

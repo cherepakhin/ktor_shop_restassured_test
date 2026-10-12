@@ -1,4 +1,4 @@
-package ru.perm.v.shop_resttemplate_test
+package ru.perm.v.ktor_shop_restassured
 
 class CONSTS {
     companion object {
