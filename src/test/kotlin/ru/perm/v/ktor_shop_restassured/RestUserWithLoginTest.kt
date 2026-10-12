@@ -6,7 +6,7 @@ import org.hamcrest.Matchers.equalTo
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
-@DisplayName("Test User route")
+@DisplayName("Test User with Login route")
 class RestUserWithLoginTest {
     @Test
     @DisplayName("GET Request for user with login is status=200")
